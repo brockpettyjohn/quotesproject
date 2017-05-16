@@ -15,4 +15,13 @@ var quotes = [
       return quotes;
   }
 
+  this.removeQuote = function (i){
+      quotes.splice(i,1)
+  }
+
+this.addData = function (newQuote){
+    quotes.push(newQuote)
+}
+
+
     });

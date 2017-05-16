@@ -1,0 +1,65 @@
+* {
+   margin: 0;
+   padding:0;
+}
+
+
+.flex div{
+ background: #F7FFFB ;
+ width: 100%;
+ list-style: none;
+ border-radius: 0 0 5px 5px;
+ height:5%;
+ border: 3px solid grey;
+ text-align:center;
+}
+
+.flex  {
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+    align-items: center;
+   
+}
+
+.quote{
+   font-size: 24px;
+   font-style: italic;
+   
+}
+
+.auth {
+   font-size: 20px
+}
+
+.wrapper{
+   border: 3px solid grey;
+   border-radius:0 0 15px 15px;
+   
+}
+
+input {
+   text-align:center;
+}
+
+
+span{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.in_puts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+}
+
+input {
+   width:50%;
+   height:25px;
+}

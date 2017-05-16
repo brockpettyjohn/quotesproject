@@ -8,9 +8,14 @@
 </head>
 <body ng-controller="quoteCtrl">
     <!--<p>{{hello}}</p>-->
-<div ng-repeat="quote in quotes">
+<input ng-model="searchFilter" placeholder="search">
+<input type="text" placeholder="Add new quote!" ng-model='newQuoteText'>
+  <input type="text" placeholder="Quotes author!" ng-model='newQuoteAuthor'>
+  <button ng-click="addQuote()">Add Quote</button>
+<div ng-repeat="quote in quotes | filter: searchFilter">
     <p>{{quote.text}}</p>
     <p>{{quote.author}}</p>
+    <span><button ng-click="removeQuote($index)">Remove</button></span>
 </div>
    
    
@@ -19,7 +24,7 @@
    
    
    
-   
+ 
    
    
     <script src=https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js></script>
