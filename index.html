@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="quoteBook">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body ng-controller="quoteCtrl">
+    <!--<p>{{hello}}</p>-->
+<div ng-repeat="quote in quotes">
+    <p>{{quote.text}}</p>
+    <p>{{quote.author}}</p>
+</div>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    <script src=https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js></script>
+    <script src="app.js"></script>
+    <script src="quotesService.js"></script>
+    <script src="controller.js"></script>
+</body>
+</html>
